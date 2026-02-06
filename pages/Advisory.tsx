@@ -20,7 +20,7 @@ const Advisory: React.FC = () => {
 
             <section className="w-full h-[60vh] overflow-hidden">
                 <img
-                    src="/images/eagle.png"
+                    src={`${import.meta.env.BASE_URL}images/eagle.png`}
                     alt="Mountain Peaks with Eagle"
                     className="w-full h-full object-cover"
                 />

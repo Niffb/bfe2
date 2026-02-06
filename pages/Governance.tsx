@@ -23,7 +23,7 @@ const Governance: React.FC = () => {
             {/* Large Image */}
             <section className="w-full h-[60vh] overflow-hidden">
                 <img
-                    src="/images/bigfoot.png"
+                    src={`${import.meta.env.BASE_URL}images/bigfoot.png`}
                     alt="Forest Canopy with Bigfoot"
                     className="w-full h-full object-cover"
                 />

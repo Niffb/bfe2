@@ -47,7 +47,7 @@ const Navbar: React.FC = () => {
 
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group relative z-50">
-            <Mountain strokeWidth={1.5} className="w-8 h-8" />
+            <img src={`${import.meta.env.BASE_URL}logo-icon.png`} alt="Bigfoot and the Eagle Logo" className="w-8 h-8 object-contain" />
             <div className="flex flex-col">
               <span className="font-serif font-semibold text-lg leading-none tracking-tight">Bigfoot and the Eagle</span>
 

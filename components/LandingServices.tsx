@@ -7,7 +7,7 @@ const LandingServices: React.FC = () => {
     {
       title: 'Governance',
       desc: 'Building confidence in leadership structures.',
-      image: '/images/bigfoot.png',
+      image: `${import.meta.env.BASE_URL}images/bigfoot.png`,
       link: '/governance'
     },
     {
@@ -19,7 +19,7 @@ const LandingServices: React.FC = () => {
     {
       title: 'Advisory',
       desc: 'Strategic guidance for future vision.',
-      image: '/images/eagle.png',
+      image: `${import.meta.env.BASE_URL}images/eagle.png`,
       link: '/advisory'
     }
   ];

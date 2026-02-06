@@ -1,56 +1,60 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bigfoot and the Eagle | Research & Strategy</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Manrope', 'sans-serif'],
-              serif: ['Cormorant Garamond', 'serif'],
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bigfoot and the Eagle | Research & Strategy</title>
+  <link rel="icon" type="image/png" href="logo-icon.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Manrope', 'sans-serif'],
+            serif: ['Cormorant Garamond', 'serif'],
+          },
+          colors: {
+            'brand-dark': '#111812', // Very dark green/black
+            'brand-green': '#3A4D39', // Muted Olive/Sage
+            'brand-light': '#F2F2EF', // Alabaster/Cloud
+            'brand-accent': '#C45D53', // Muted Terra Cotta
+          },
+          animation: {
+            'fade-up': 'fadeUp 0.8s ease-out forwards',
+            'fade-in': 'fadeIn 1s ease-out forwards',
+            'slide-in': 'slideIn 1s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+            'scale-slow': 'scaleSlow 20s linear infinite alternate',
+          },
+          keyframes: {
+            fadeUp: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
             },
-            colors: {
-              'brand-dark': '#111812', // Very dark green/black
-              'brand-green': '#3A4D39', // Muted Olive/Sage
-              'brand-light': '#F2F2EF', // Alabaster/Cloud
-              'brand-accent': '#C45D53', // Muted Terra Cotta
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
             },
-            animation: {
-              'fade-up': 'fadeUp 0.8s ease-out forwards',
-              'fade-in': 'fadeIn 1s ease-out forwards',
-              'slide-in': 'slideIn 1s cubic-bezier(0.16, 1, 0.3, 1) forwards',
-              'scale-slow': 'scaleSlow 20s linear infinite alternate',
+            slideIn: {
+              '0%': { transform: 'translateX(100%)' },
+              '100%': { transform: 'translateX(0)' },
             },
-            keyframes: {
-              fadeUp: {
-                '0%': { opacity: '0', transform: 'translateY(20px)' },
-                '100%': { opacity: '1', transform: 'translateY(0)' },
-              },
-              fadeIn: {
-                '0%': { opacity: '0' },
-                '100%': { opacity: '1' },
-              },
-              slideIn: {
-                '0%': { transform: 'translateX(100%)' },
-                '100%': { transform: 'translateX(0)' },
-              },
-              scaleSlow: {
-                '0%': { transform: 'scale(1)' },
-                '100%': { transform: 'scale(1.1)' },
-              }
+            scaleSlow: {
+              '0%': { transform: 'scale(1)' },
+              '100%': { transform: 'scale(1.1)' },
             }
           }
         }
       }
-    </script>
-    <script type="importmap">
+    }
+  </script>
+  <script type="importmap">
     {
       "imports": {
         "react": "https://esm.sh/react@^19.2.4",
@@ -63,21 +67,24 @@
       }
     }
     </script>
-    <style>
-      body {
-        background-color: #F2F2EF;
-        color: #111812;
-        overflow-x: hidden;
-      }
-      ::selection {
-        background: #3A4D39;
-        color: white;
-      }
-    </style>
+  <style>
+    body {
+      background-color: #F2F2EF;
+      color: #111812;
+      overflow-x: hidden;
+    }
+
+    ::selection {
+      background: #3A4D39;
+      color: white;
+    }
+  </style>
   <link rel="stylesheet" href="/index.css">
 </head>
-  <body>
-    <div id="root"></div>
+
+<body>
+  <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
 </body>
+
 </html>
